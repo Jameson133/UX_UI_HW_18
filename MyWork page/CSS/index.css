@@ -39,14 +39,7 @@ ul li {
     width: 500px;
     margin: 0 auto;
 }
-footer {
-    background-color: #373738;
-    padding: 10%;
-}
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-}
+
 /* My Work Section Constructed Using CSS Grid */
 div.flexContainer {
     padding: 20px 50px;
@@ -119,4 +112,76 @@ h2 {padding-left: 50px}
         "a7"
         "a8"
     }
+}
+footer {
+    background-color:#B4C3D1;
+    padding: 0;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+    background-color:#B4C3D1;
+    Padding: 0;
+    Margin:0;
+    list-style-type: none;
+}
+.footerContainer {
+    display: grid;
+    display: flex;
+    list-style-type: none;
+    grid-template-columns: "footercontact" "footersocial";
+    justify-content: space-evenly;
+   
+    /* grid-template-areas: "footercontact" "footersocial"; */
+
+}
+.contactContainer{
+width: 50%
+}
+.contactContainer h3{
+    text-align: center;
+    grid-area: footercontact;
+}
+.contactContainer li {
+    padding: 50px;
+}
+.socialContainer li{
+    padding:0;
+    margin: 0;
+}
+.socialContainer{
+    display: grid;
+    grid-template-areas: "footersocial" "footersocial" "footersocial" 
+    "be" "link" "grid";
+}
+.socialContainer h3{
+    grid-area: footersocial;
+    text-align: center;
+}
+#behance img {
+    grid-area: be;
+    height: 50px;
+    width: 50px;
+    padding-left: 50px;
+}
+#linkedin img {
+    grid-area: link;
+    height: 50px;
+    width: 50px;
+    padding-left: 0px;
+}
+#github img {
+    grid-area: git;
+    height: 50px;
+    width: 50px;
+    padding-left: 50px;
+}
+#name {
+font-size: larger;
+font-weight: bold ;
+}
+#email{
+font-size: larger;
+font-weight: bold;
 }
